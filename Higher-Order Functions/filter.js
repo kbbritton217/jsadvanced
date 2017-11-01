@@ -7,16 +7,19 @@ let people = [
 	{name: "Bill", gender: "male"},
 	{name: "Tina", gender: "female"},
 	{name: "Jeff", gender: "male"},
-	{name: "PAtty", gender: "female"},
+	{name: "Patty", gender: "female"},
 ]
 
-let p = people.filter(function(person) {
+let pMale = people.filter(function(person) {
 	return people.gender === "male"
 })
+
+let p = people.filter(pMale);
 
 console.log(p);
 
 //pass items into callback function; like using a for loop and push method
+//looks at boolean for if item should be included or not
 
 
 /*without higher-order
