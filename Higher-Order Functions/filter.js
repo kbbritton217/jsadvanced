@@ -3,18 +3,18 @@
 
 //using .filter
 
-let people = [
-	{name: "Bill", gender: "male"},
-	{name: "Tina", gender: "female"},
-	{name: "Jeff", gender: "male"},
-	{name: "Patty", gender: "female"},
+var people = [
+	{name: 'Bill', gender: 'male'},
+	{name: 'Tina', gender: 'female'},
+	{name: 'Jeff', gender: 'male'},
+	{name: 'Patty', gender: 'female'},
 ]
 
-let pMale = people.filter(function(person) {
+var pMale = people.filter(function(person) {
 	return people.gender === "male"
 })
 
-let p = people.filter(pMale);
+var p = people.filter(pMale);
 
 console.log(p);
 

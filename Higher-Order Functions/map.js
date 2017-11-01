@@ -1,6 +1,6 @@
 //using .map
 
-let people = [
+var persons = [
 	{name: 'Bill', gender: 'male'},
 	{name: 'Tina', gender: 'female'},
 	{name: 'Jeff', gender: 'male'},
@@ -8,9 +8,12 @@ let people = [
 ]
 
 
-let names = people.map(function(person) {
-	return people.name
+var names = people.map(function(person) {
+	return person.name
 })
+
+// With arrow functions
+//let names = people.name((person) => person.name)
 
 //without Higher-Order function
 
